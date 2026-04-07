@@ -1,1 +1,16 @@
 # included <stdio.h>
+int main ()
+{
+ float n1,n2,res;
+ int op=0;
+ printf("Bienvenido a mi calculadora\n");
+ printf("Escoge una opción\n");
+ printf("1.-Suma\n");
+ printf("2.-Resta\n");
+ printf("3.-Multiplicación\n");
+ printf("4.-División\n");
+ printf("Opción: ");
+ scanf("%d",&op);
+ printf("Ingresa dos cantidades separadas por espacio\n");
+ scanf("%f %f",&n1,&n2);
+ switch
