@@ -1,19 +1,35 @@
 # include <stdio.h>
 # include <math.h>
-Int main()
+int main()
+float n1, n2, res;
+int op;
+
+do
 {
-  float n1, n2, res:
-  int op=0;    
   printf ("Bienvenido a mi cacluladora\n");
-  printf ("escoge una opcion\n");
+  printf ("Escoge una opcion\n");
   printf ("1.- suma\n");
   printf ("2.- resta\n");
   printf ("3.- multiplicacion\n");
   printf ("4.- division\n");
-  printf ("opcion: \n");
+  printf ("5.- raíz cuadrada\n");
+  printf ("6.- potencia\n");
+  printf ("7.- salida\n");
+  do
+  {
   scanf ("%d",&op);
+  if(op==5)
+  {
+    printf ("Ingresa una cantidad\n");
+    scanf ("%f", &n1);
+  } 
+  else
+  {
   printf ("Ingresa dos cantidades separadas por el espacio\n");
   scanf ("%f %f", &n1 &n2);
+  } 
+  while(op < 1 || op > 7);
+ }
   switch (op) 
     {
      default:
@@ -33,6 +49,14 @@ Int main()
       break;
     case 4:
       rest = n1/n2;
+      printf ("El resultado es %f\n", res);
+      break;
+    case 5:
+      rest = sqrt(n1),;
+      printf ("El resultado es %f\n", res);
+      break;
+    case 6:
+      rest = pow(n1/n2);
       printf ("El resultado es %f\n", res);
       break;
     }
